@@ -32,8 +32,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'src.apps.Ep3Config',
     'django_extensions',
-    'ep3.apps.Ep3Config',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
