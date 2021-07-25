@@ -1,0 +1,7 @@
+# Removing sensitive data from repository
+.env
+.env.*
+
+# Removing data created at running time
+./dbdata
+**/__pycache__
