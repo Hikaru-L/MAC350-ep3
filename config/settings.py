@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'src.apps.Ep3Config',
+    'ep3.apps.Ep3Config',
     'django_extensions',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -52,7 +52,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ep3.urls'
+ROOT_URLCONF = 'config.urls'
 
 TEMPLATES = [
     {
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ep3.wsgi.application'
+WSGI_APPLICATION = 'config.wsgi.application'
 
 
 # Database

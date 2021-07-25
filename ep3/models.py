@@ -55,7 +55,7 @@ class Paciente_Exame_Amostra(models.Model):
     class Meta:
         #not sure if this is right
         constraints = [
-                models.UniqueConstraint(fields=['id_paciente', 'id_amostra', ' id_exame', 'data_de_realizacao'], name='unique_id_paciente_amostra_exame')
+                models.UniqueConstraint(fields=['id_paciente', 'id_amostra', 'id_exame', 'data_de_realizacao'], name='unique_id_paciente_amostra_exame')
                 ]
 
 
