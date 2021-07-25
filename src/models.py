@@ -45,7 +45,7 @@ class amostra(models.Model):
         return self.codigo_amostra
 
 
-class paciente_exame_amostra(models.Model):
+class Paciente_Exame_Amostra(models.Model):
     id_paciente = models.ForeignKey(paciente, on_delete=models.PROTECT)
     id_amostra = models.ForeignKey(amostra, on_delete=models.PROTECT)
     id_exame = models.ForeignKey(exame, on_delete=models.PROTECT)

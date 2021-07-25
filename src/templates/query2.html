@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Resultado da Query 2</h1>
+  <h4>Lista de Exames</h4>
+  {% if query2_result_list %}
+    <p>TOTAL: {{query2_result_list | length}}</p>
+    {% for row in query2_result_list %}
+    <ul>
+      <li><p>tipo: {{row.tipo}}</p> </li>
+      <li><p>virus: {{row.virus}}</p> </li>
+      <li><p>paciente: {{row.id_paciente}}</p> </li>
+    </ul>
+    <br>
+    {% endfor %}
+  {% else %}
+    <p>No results are available.</p>
+  {% endif %}
+</body>
+</html>
