@@ -8,7 +8,7 @@ def index(request):
     
 def pacientes(request):
     with connection.cursor() as cursor:
-        cursor.execute('SELECT * FROM paciente')
+        cursor.execute('SELECT * FROM ep3_paciente')
         result = named_tuple_fetchall(cursor)
     
     template = loader.get_template('pacientes.html')
@@ -18,7 +18,7 @@ def pacientes(request):
 
 def exames(request):
     with connection.cursor() as cursor:
-        cursor.execute('SELECT * FROM exame')
+        cursor.execute('SELECT * FROM ep3_exame')
         result = named_tuple_fetchall(cursor)
     
     template = loader.get_template('exames.html')
@@ -28,7 +28,7 @@ def exames(request):
 
 def amostras(request):
     with connection.cursor() as cursor:
-        cursor.execute('SELECT * FROM amostra')
+        cursor.execute('SELECT * FROM ep3_amostra')
         result = named_tuple_fetchall(cursor)
     
     template = loader.get_template('amostras.html')
@@ -38,7 +38,7 @@ def amostras(request):
 
 def relations(request):
     with connection.cursor() as cursor:
-        cursor.execute('SELECT * FROM Paciente_Exame_Amostra')
+        cursor.execute('SELECT * FROM ep3_Paciente_Exame_Amostra')
         result = named_tuple_fetchall(cursor)
     
     template = loader.get_template('relations.html')

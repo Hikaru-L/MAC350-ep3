@@ -28,7 +28,7 @@ class exame(models.Model):
                 ]
 
     def __str__(self):
-        return self.id_exame
+        return self.tipo + ', ' + self.virus
 
 class amostra(models.Model):
     id_amostra = models.IntegerField(primary_key=True)

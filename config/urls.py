@@ -15,8 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import redirect
 
 urlpatterns = [
+    path('', lambda req: redirect('/ep3/')),
     path('ep3/', include('ep3.urls')),
     path('admin/', admin.site.urls),
 ]
