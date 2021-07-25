@@ -7,10 +7,10 @@
     <p>TOTAL: {{relations_result_list | length}}</p>
     {% for row in relations_result_list %}
     <ul>
-      <li><p>paciente: {{row.id_paciente}}</p></li>
-      <li><p>exame: {{row.id_exame}}</p></li>
-      <li><p>amostra: {{row.id_amostra}}</p></li>
-      <li><p>data de realiz: {{row.data_de_realizacao}}</p></li>
+      <li><p>paciente: {{row.id_paciente_id}}</p></li>
+      <li><p>exame: {{row.id_exame_id}}</p></li>
+      <li><p>amostra: {{row.id_amostra_id}}</p></li>
+      <li><p>data de realização: {{row.data_de_realizacao}}</p></li>
     </ul>
     <br />
     {% endfor %} {% else %}
